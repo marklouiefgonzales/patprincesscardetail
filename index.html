@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pat &amp; Princess Auto Detailing | Interior, Exterior &amp; Ceramic Coating</title>
+<meta name="description" content="Family-owned car detailing by Pat and Princess. Interior cleaning, exterior polish, ceramic coating and more. Request a free quote today.">
+<meta property="og:title" content="Pat &amp; Princess Auto Detailing">
+<meta property="og:description" content="Your car, treated like our own. Request a free quote.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#10233A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,800;110,900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoDetailing","name":"Pat & Princess Auto Detailing","telephone":"+1-555-000-0000","email":"hello@example.com","openingHours":["Mo-Sa 08:00-18:00"]}
+</script>
+<style>
+:root{
+  --ink:#10233A; --ink-2:#1B3554; --gloss:#F5F7F9; --white:#fff;
+  --amber:#F0A030; --amber-d:#B86F00; --line:#D9DFE6; --mute:#52627A;
+  --r:14px;
+  --head:'Archivo','Arial Black',sans-serif; --body:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--body);color:var(--ink);background:var(--gloss);line-height:1.6;font-size:1.05rem}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{width:min(1100px,92%);margin-inline:auto}
+section{padding:72px 0}
+h1,h2,h3{font-family:var(--head);line-height:1.08;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:800;margin-bottom:12px}
+.lead{color:var(--mute);max-width:56ch;margin-bottom:36px}
+.btn{display:inline-block;font:700 1rem var(--body);padding:14px 26px;border-radius:999px;background:var(--amber);color:var(--ink);text-decoration:none;border:2px solid var(--amber);cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#ffb84d;transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.5)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:var(--ink);color:var(--white)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 1.15rem var(--head);text-decoration:none}
+.logo span{color:var(--amber)}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:500;font-size:.98rem}
+nav a:hover{color:var(--amber)}
+.menu-btn{display:none;background:none;border:0;color:var(--white);font-size:1.8rem;cursor:pointer;padding:4px 8px}
+@media(max-width:820px){
+  .menu-btn{display:block}
+  nav ul{display:none;position:absolute;top:64px;left:0;right:0;background:var(--ink);flex-direction:column;gap:0;padding:8px 4%;border-top:1px solid var(--ink-2)}
+  nav ul.open{display:flex}
+  nav li a{display:block;padding:14px 0;border-bottom:1px solid var(--ink-2)}
+}
+
+/* hero */
+.hero{background:var(--ink);color:var(--white);padding:64px 0 0;overflow:hidden}
+.hero .wrap{display:grid;gap:32px}
+.hero h1{font-size:clamp(2.6rem,9vw,5.6rem);font-weight:900;font-stretch:110%;max-width:11ch}
+.hero p{color:#C3CFDD;max-width:46ch;font-size:1.15rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.car{position:relative;margin-top:8px}
+.car svg{width:100%;height:auto}
+.car::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);transform:translateX(-120%);animation:shine 2.2s .6s ease-out 1 forwards;mix-blend-mode:overlay;pointer-events:none}
+@keyframes shine{to{transform:translateX(120%)}}
+.strip{background:var(--amber);color:var(--ink);font-weight:700}
+.strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding:14px 0;font-size:.98rem}
+
+/* services */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.pkg{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column}
+.pkg.best{background:var(--ink);color:var(--white);border-color:var(--ink)}
+.pkg h3{font-size:1.5rem;font-weight:800}
+.price{font:800 2rem var(--head);margin:10px 0 14px}
+.price small{font:500 .9rem var(--body);opacity:.7}
+.pkg ul{list-style:none;padding:0;margin-bottom:22px;flex:1}
+.pkg li{padding:7px 0 7px 26px;position:relative;border-bottom:1px solid var(--line)}
+.pkg.best li{border-color:var(--ink-2)}
+.pkg li::before{content:"✓";position:absolute;left:0;color:var(--amber-d);font-weight:700}
+.pkg.best li::before{color:var(--amber)}
+.badge{align-self:flex-start;background:var(--amber);color:var(--ink);font-weight:700;font-size:.85rem;padding:3px 12px;border-radius:999px;margin-bottom:10px}
+.addons{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.addons span{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.95rem}
+.note{margin-top:18px;font-size:.92rem;color:var(--mute)}
+
+/* about */
+.about{background:var(--white)}
+.about .wrap{display:grid;gap:40px;grid-template-columns:1fr}
+@media(min-width:820px){.about .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.people{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.person{background:var(--gloss);border-radius:var(--r);padding:22px;text-align:center}
+.avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 12px;background:var(--ink);color:var(--amber);display:grid;place-items:center;font:900 2.2rem var(--head)}
+.person h3{font-size:1.25rem}
+.person p{font-size:.92rem;color:var(--mute)}
+.about p+p{margin-top:14px}
+
+/* process, reviews, faq */
+.steps{counter-reset:s;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.step{counter-increment:s;padding-top:14px;border-top:4px solid var(--amber)}
+.step h3{font-size:1.2rem;margin:10px 0 4px}
+.step h3::before{content:counter(s) ". "}
+.step p{color:var(--mute);font-size:.98rem}
+.reviews{background:var(--ink);color:var(--white)}
+.reviews .lead{color:#C3CFDD}
+.quote{background:var(--ink-2);border-radius:var(--r);padding:26px}
+.quote p{font-size:1.05rem;margin-bottom:14px}
+.quote b{color:var(--amber)}
+details{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin-top:10px;color:var(--mute)}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.ph{aspect-ratio:4/3;border-radius:var(--r);background:linear-gradient(135deg,var(--ink-2),var(--ink));color:#9FB0C6;display:grid;place-items:center;text-align:center;padding:14px;font-size:.92rem}
+
+/* contact */
+.contact{background:var(--white)}
+.cgrid{display:grid;gap:32px;grid-template-columns:1fr}
+@media(min-width:900px){.cgrid{grid-template-columns:1fr 1fr}}
+.card{background:var(--gloss);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.card h3{font-size:1.5rem;margin-bottom:6px}
+form{display:grid;gap:14px;margin-top:16px}
+label{font-weight:700;font-size:.95rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--amber);border-color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+.two{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.hp{position:absolute;left:-9999px}
+.status{font-weight:700;min-height:1.4em}
+.status.ok{color:#17734A}.status.err{color:#B42318}
+.info{list-style:none;padding:0;display:grid;gap:12px;margin-top:14px}
+.info li{display:flex;gap:12px}
+.info b{min-width:84px}
+.hours{width:100%;border-collapse:collapse;margin-top:6px}
+.hours td{padding:6px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right}
+
+footer{background:var(--ink);color:#C3CFDD;padding:40px 0 90px;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer a{color:var(--white)}
+.call{position:fixed;right:16px;bottom:16px;z-index:40;background:var(--amber);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 20px;border-radius:999px;box-shadow:0 6px 20px rgba(16,35,58,.35)}
+@media(min-width:821px){.call{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Pat &amp; Princess <span>Detailing</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <h1>Your car, treated like our own.</h1>
+    <p>Pat and Princess run a family detailing business built on careful hands, honest prices and a finish you can see your face in.</p>
+    <div class="cta">
+      <a class="btn" href="#book">Get a free quote</a>
+      <a class="btn ghost" href="#services">See packages</a>
+    </div>
+    <div class="car" aria-hidden="true">
+      <svg viewBox="0 0 800 260" fill="none">
+        <path d="M60 190c10-48 40-62 100-70l70-52c18-13 40-20 64-20h150c30 0 56 10 78 30l60 44c40 8 70 14 82 42l6 26H40z" fill="#24456B"/>
+        <path d="M250 76h120v50H210zM390 76h60c16 0 30 6 42 16l40 34H390z" fill="#9FC3E8" opacity=".85"/>
+        <circle cx="210" cy="196" r="44" fill="#0A1626"/><circle cx="210" cy="196" r="20" fill="#C9D4E2"/>
+        <circle cx="600" cy="196" r="44" fill="#0A1626"/><circle cx="600" cy="196" r="20" fill="#C9D4E2"/>
+        <rect x="0" y="238" width="800" height="22" fill="#0A1626"/>
+        <g fill="#fff" opacity=".7"><circle cx="300" cy="150" r="4"/><circle cx="330" cy="164" r="3"/><circle cx="420" cy="152" r="5"/><circle cx="470" cy="168" r="3"/><circle cx="540" cy="146" r="4"/></g>
+      </svg>
+    </div>
+  </div>
+  <div class="strip"><div class="wrap"><span>Fully insured</span><span>We come to you or visit our shop</span><span>Satisfaction guaranteed</span></div></div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>Detailing packages</h2>
+    <p class="lead">Pick a package or ask for a custom one. Prices are starting rates for a standard sedan; SUVs and trucks cost a little more.</p>
+    <div class="grid">
+      <article class="pkg">
+        <h3>Express Wash</h3>
+        <div class="price">$XX <small>from</small></div>
+        <ul><li>Hand wash and dry</li><li>Wheels and tires cleaned</li><li>Windows inside and out</li><li>Interior vacuum</li></ul>
+        <a class="btn" href="#book">Book this</a>
+      </article>
+      <article class="pkg best">
+        <span class="badge">Most popular</span>
+        <h3>Full Detail</h3>
+        <div class="price">$XXX <small>from</small></div>
+        <ul><li>Everything in Express Wash</li><li>Clay bar and paint polish</li><li>Wax or sealant finish</li><li>Seats, carpets and mats shampooed</li><li>Dashboard and trim conditioned</li></ul>
+        <a class="btn" href="#book">Book this</a>
+      </article>
+      <article class="pkg">
+        <h3>Ceramic Coating</h3>
+        <div class="price">$XXX <small>from</small></div>
+        <ul><li>Full paint correction</li><li>Multi-year ceramic protection</li><li>Deep water beading and gloss</li><li>Easier washing afterward</li></ul>
+        <a class="btn" href="#book">Book this</a>
+      </article>
+    </div>
+    <div class="addons" aria-label="Add-ons">
+      <span>Pet hair removal</span><span>Headlight restoration</span><span>Engine bay clean</span><span>Odor treatment</span><span>Leather conditioning</span>
+    </div>
+    <p class="note">Replace the $XX placeholders with your real prices in index.html.</p>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div>
+      <h2>About us</h2>
+      <p>We started Pat &amp; Princess Auto Detailing because we love cars and we love seeing people smile when they get them back looking new.</p>
+      <p>Every job is done by the two of us, not handed off. That means one standard of care, clear communication and no surprises on the bill.</p>
+      <p>Whether it is a daily commuter, a family van or a weekend show car, we give it the same attention.</p>
+    </div>
+    <div class="people">
+      <div class="person"><div class="avatar" aria-hidden="true">P</div><h3>Pat</h3><p>Co-owner. Paint correction and ceramic coating specialist.</p></div>
+      <div class="person"><div class="avatar" aria-hidden="true">P</div><h3>Princess</h3><p>Co-owner. Interior detailing and customer care lead.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="lead">Simple from start to finish.</p>
+    <div class="steps">
+      <div class="step"><h3>Request a quote</h3><p>Tell us your vehicle and what you need.</p></div>
+      <div class="step"><h3>Pick a time</h3><p>We confirm a date that fits your schedule.</p></div>
+      <div class="step"><h3>We detail</h3><p>We work carefully and send updates on longer jobs.</p></div>
+      <div class="step"><h3>You enjoy the shine</h3><p>Walk around the car with us before you pay.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>Our work</h2>
+    <p class="lead">Before and after shots from recent jobs.</p>
+    <div class="gallery">
+      <div class="ph">Add a photo: images/work-1.jpg</div>
+      <div class="ph">Add a photo: images/work-2.jpg</div>
+      <div class="ph">Add a photo: images/work-3.jpg</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <p class="lead">Sample reviews. Replace them with real ones from your customers.</p>
+    <div class="grid">
+      <div class="quote"><p>My SUV looked brand new after the full detail. Pat and Princess were on time and so friendly.</p><b>Customer name</b></div>
+      <div class="quote"><p>The ceramic coating is incredible. Water just rolls off. Worth every peso and dollar.</p><b>Customer name</b></div>
+      <div class="quote"><p>They got pet hair out of seats I thought were ruined. Highly recommend.</p><b>Customer name</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Questions we get a lot</h2>
+    <p class="lead">Can't find your answer? Leave us a message below.</p>
+    <details><summary>How long does a detail take?</summary><p>An express wash takes about 1 to 2 hours. A full detail takes 4 to 6 hours. Ceramic coating may need 1 to 2 days.</p></details>
+    <details><summary>Do you come to me?</summary><p>Yes, we offer mobile service in our area. We need access to water and power at your location, or you can visit our shop.</p></details>
+    <details><summary>How do I pay?</summary><p>We accept cash, card and mobile payments after the job is done and you are happy.</p></details>
+    <details><summary>What if I'm not satisfied?</summary><p>Tell us right away and we will fix it at no charge.</p></details>
+    <details><summary>Can I reschedule?</summary><p>Of course. Just let us know at least 24 hours before your appointment.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="lead">Request a quote, book a slot or just say hello. We reply within one business day.</p>
+    <div class="cgrid">
+      <div class="card" id="book">
+        <h3>Request a quote</h3>
+        <form data-form="quote" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="New quote request">
+          <div class="two">
+            <label>Name<input name="name" required autocomplete="name"></label>
+            <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+          </div>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <div class="two">
+            <label>Vehicle (year, make, model)<input name="vehicle" required></label>
+            <label>Package
+              <select name="package"><option>Express Wash</option><option selected>Full Detail</option><option>Ceramic Coating</option><option>Not sure yet</option></select>
+            </label>
+          </div>
+          <label>Preferred date<input name="date" type="date"></label>
+          <label>Anything we should know?<textarea name="details"></textarea></label>
+          <button class="btn" type="submit">Send quote request</button>
+          <p class="status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3>Leave a message</h3>
+          <form data-form="message" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="hidden" name="_subject" value="New website message">
+            <label>Name<input name="name" required></label>
+            <label>Email<input name="email" type="email" required></label>
+            <label>Message<textarea name="message" required></textarea></label>
+            <button class="btn" type="submit">Send message</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="card" style="margin-top:20px">
+          <h3>Find us</h3>
+          <ul class="info">
+            <li><b>Call</b><a href="tel:+15550000000">(555) 000-0000</a></li>
+            <li><b>Email</b><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><b>Address</b><span>123 Your Street, Your City</span></li>
+            <li><b>Social</b><span><a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">TikTok</a></span></li>
+          </ul>
+          <table class="hours" aria-label="Opening hours">
+            <tr><td>Monday to Saturday</td><td>8:00 AM to 6:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Pat &amp; Princess Auto Detailing. All rights reserved.</div>
+    <div><a href="#top">Back to top</a></div>
+  </div>
+</footer>
+<a class="call" href="tel:+15550000000" aria-label="Call us">Call now</a>
+
+<script>
+// Mobile menu
+const btn=document.getElementById('menuBtn'),menu=document.getElementById('menu');
+btn.addEventListener('click',()=>{const o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o);btn.textContent=o?'✕':'☰'});
+menu.addEventListener('click',e=>{if(e.target.tagName==='A'){menu.classList.remove('open');btn.setAttribute('aria-expanded',false);btn.textContent='☰'}});
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// Forms (Formspree). Falls back to the visitor's email app until you add your form ID.
+const OWNER_EMAIL='hello@example.com';
+document.querySelectorAll('form[data-form]').forEach(f=>{
+  f.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const s=f.querySelector('.status'),b=f.querySelector('button');
+    if(f.querySelector('[name=_gotcha]').value)return;
+    s.className='status';
+    if(f.action.includes('YOUR_FORM_ID')){
+      const d=Object.fromEntries(new FormData(f));delete d._gotcha;
+      const body=Object.entries(d).map(([k,v])=>k+': '+v).join('\n');
+      location.href='mailto:'+OWNER_EMAIL+'?subject='+encodeURIComponent(d._subject||'Website message')+'&body='+encodeURIComponent(body);
+      s.textContent='Opening your email app to send this.';s.classList.add('ok');return;
+    }
+    b.disabled=true;b.textContent='Sending...';
+    try{
+      const r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});
+      if(r.ok){f.reset();s.textContent='Thank you! We got your message and will reply within one business day.';s.classList.add('ok')}
+      else throw 0;
+    }catch{s.textContent='Something went wrong. Please call us or try again.';s.classList.add('err')}
+    b.disabled=false;b.textContent=f.dataset.form==='quote'?'Send quote request':'Send message';
+  });
+});
+</script>
+</body>
+</html>
