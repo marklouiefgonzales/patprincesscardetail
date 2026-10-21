@@ -7,6 +7,7 @@
 <meta name="description" content="Family-owned car detailing by Pat and Princess. Interior cleaning, exterior polish, ceramic coating and more. Request a free quote today.">
 <meta property="og:title" content="Pat &amp; Princess Auto Detailing">
 <meta property="og:description" content="Your car, treated like our own. Request a free quote.">
+<meta property="og:image" content="images/work-1.svg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#10233A">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
@@ -91,7 +92,7 @@ nav a:hover{color:var(--amber)}
 @media(min-width:820px){.about .wrap{grid-template-columns:1fr 1fr;align-items:center}}
 .people{display:grid;gap:16px;grid-template-columns:1fr 1fr}
 .person{background:var(--gloss);border-radius:var(--r);padding:22px;text-align:center}
-.avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 12px;background:var(--ink);color:var(--amber);display:grid;place-items:center;font:900 2.2rem var(--head)}
+.avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 12px;object-fit:cover}
 .person h3{font-size:1.25rem}
 .person p{font-size:.92rem;color:var(--mute)}
 .about p+p{margin-top:14px}
@@ -111,6 +112,7 @@ details{background:var(--white);border:1px solid var(--line);border-radius:var(-
 summary{font-weight:700;cursor:pointer}
 details p{margin-top:10px;color:var(--mute)}
 .gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.gallery figure{margin:0}.hero .car img{object-fit:contain}.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}.gallery figcaption{margin-top:8px;font-size:.92rem;color:var(--mute)}
 .ph{aspect-ratio:4/3;border-radius:var(--r);background:linear-gradient(135deg,var(--ink-2),var(--ink));color:#9FB0C6;display:grid;place-items:center;text-align:center;padding:14px;font-size:.92rem}
 
 /* contact */
@@ -172,16 +174,7 @@ footer a{color:var(--white)}
       <a class="btn" href="#book">Get a free quote</a>
       <a class="btn ghost" href="#services">See packages</a>
     </div>
-    <div class="car" aria-hidden="true">
-      <svg viewBox="0 0 800 260" fill="none">
-        <path d="M60 190c10-48 40-62 100-70l70-52c18-13 40-20 64-20h150c30 0 56 10 78 30l60 44c40 8 70 14 82 42l6 26H40z" fill="#24456B"/>
-        <path d="M250 76h120v50H210zM390 76h60c16 0 30 6 42 16l40 34H390z" fill="#9FC3E8" opacity=".85"/>
-        <circle cx="210" cy="196" r="44" fill="#0A1626"/><circle cx="210" cy="196" r="20" fill="#C9D4E2"/>
-        <circle cx="600" cy="196" r="44" fill="#0A1626"/><circle cx="600" cy="196" r="20" fill="#C9D4E2"/>
-        <rect x="0" y="238" width="800" height="22" fill="#0A1626"/>
-        <g fill="#fff" opacity=".7"><circle cx="300" cy="150" r="4"/><circle cx="330" cy="164" r="3"/><circle cx="420" cy="152" r="5"/><circle cx="470" cy="168" r="3"/><circle cx="540" cy="146" r="4"/></g>
-      </svg>
-    </div>
+    <div class="car"><img src="images/hero-car.svg" data-photo="hero" alt="Freshly detailed blue car with a glossy finish" width="800" height="260"></div>
   </div>
   <div class="strip"><div class="wrap"><span>Fully insured</span><span>We come to you or visit our shop</span><span>Satisfaction guaranteed</span></div></div>
 </section>
@@ -227,8 +220,8 @@ footer a{color:var(--white)}
       <p>Whether it is a daily commuter, a family van or a weekend show car, we give it the same attention.</p>
     </div>
     <div class="people">
-      <div class="person"><div class="avatar" aria-hidden="true">P</div><h3>Pat</h3><p>Co-owner. Paint correction and ceramic coating specialist.</p></div>
-      <div class="person"><div class="avatar" aria-hidden="true">P</div><h3>Princess</h3><p>Co-owner. Interior detailing and customer care lead.</p></div>
+      <div class="person"><img class="avatar" src="images/pat.svg" data-photo="pat" alt="Portrait of Pat" width="96" height="96"><h3>Pat</h3><p>Co-owner. Paint correction and ceramic coating specialist.</p></div>
+      <div class="person"><img class="avatar" src="images/princess.svg" data-photo="princess" alt="Portrait of Princess" width="96" height="96"><h3>Princess</h3><p>Co-owner. Interior detailing and customer care lead.</p></div>
     </div>
   </div>
 </section>
@@ -251,9 +244,9 @@ footer a{color:var(--white)}
     <h2>Our work</h2>
     <p class="lead">Before and after shots from recent jobs.</p>
     <div class="gallery">
-      <div class="ph">Add a photo: images/work-1.jpg</div>
-      <div class="ph">Add a photo: images/work-2.jpg</div>
-      <div class="ph">Add a photo: images/work-3.jpg</div>
+      <figure><img src="images/work-1.svg" data-photo="work-1" alt="Car before and after a full detail" loading="lazy"><figcaption>Full detail: before and after</figcaption></figure>
+      <figure><img src="images/work-2.svg" data-photo="work-2" alt="Clean car interior with steering wheel and seat" loading="lazy"><figcaption>Interior deep clean</figcaption></figure>
+      <figure><img src="images/work-3.svg" data-photo="work-3" alt="Water beading on ceramic coated paint" loading="lazy"><figcaption>Ceramic coating water beading</figcaption></figure>
     </div>
   </div>
 </section>
@@ -379,6 +372,26 @@ document.querySelectorAll('form[data-form]').forEach(f=>{
     }catch{s.textContent='Something went wrong. Please call us or try again.';s.classList.add('err')}
     b.disabled=false;b.textContent=f.dataset.form==='quote'?'Send quote request':'Send message';
   });
+});
+
+// Auto-use real photos: name them hero / work-1 / work-2 / work-3 / pat / princess
+// (jpg, jpeg, png or webp). Works from the images folder OR the main folder.
+document.querySelectorAll('img[data-photo]').forEach(img=>{
+  const name=img.dataset.photo,exts=['jpg','jpeg','png','webp','JPG','JPEG','PNG'];
+  const dirs=['images/',''],list=[];
+  dirs.forEach(d=>exts.forEach(e=>list.push(d+name+'.'+e)));
+  (function next(i){
+    if(i>=list.length)return;
+    const t=new Image();
+    t.onload=()=>{img.src=list[i]};
+    t.onerror=()=>next(i+1);
+    t.src=list[i];
+  })(0);
+  // If the artwork itself was uploaded to the main folder, find it there
+  const root=img.getAttribute('src').replace('images/','');
+  const fix=()=>{if(img.src.indexOf('images/')>-1){img.src=root}};
+  img.addEventListener('error',fix,{once:true});
+  if(img.complete&&img.naturalWidth===0)fix();
 });
 </script>
 </body>
